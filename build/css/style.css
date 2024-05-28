@@ -1205,7 +1205,7 @@ footer a {
 
 #emailInput {
   background-color: var(--emailInput);
-  color: var(--ProfileText);
+  color: var(--paragraphCol);
 }
 
 #emailInput::-moz-placeholder {
