@@ -51,8 +51,36 @@ subscBtn.addEventListener("click", function () {
     errorBtn.classList.remove("successBtn");
   }
 });
+
+// toggle////////////////////////////////////////
 const darkBtn = document.getElementById("dark-btn");
 darkBtn.onclick = function () {
   darkBtn.classList.toggle("dark-btn-on");
   document.body.classList.toggle("darkenmode");
+
+  if (localStorage.getItem("theme") == "light") {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
 };
+if (localStorage.getItem("theme") == "light") {
+  darkBtn.classList.remove("dark-btn-on");
+  document.body.classList.remove("darkenmode");
+} else if (localStorage.getItem("theme") == "dark") {
+  darkBtn.classList.add("dark-btn-on");
+  document.body.classList.add("darkenmode");
+} else {
+  localStorage.setItem("theme", "light");
+}
+// trial///////////////////////////
+// const toggle = document.getElementById("dark-btn");
+// const sun = document.getElementById("sunny");
+
+// toggle.addEventListener("click", function () {
+//   if (this.click) {
+//     document.body.classlist.add("sunny");
+//   } else {
+//     document.body.classList.remove("sunny");
+//   }
+// });

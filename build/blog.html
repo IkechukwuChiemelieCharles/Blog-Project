@@ -16,12 +16,12 @@
         <a href="#"
           ><img
             src="./project images/black logo with text.png"
-            class="w-12 h-4 sm:w-14 sm:h-4 mr-10 ml-5"
+            class="w-14 h-6 sm:w-14 sm:h-4 mr-10 ml-5"
             alt="logo"
         /></a>
         <div class="hidden md:block">
           <a
-            href="index.html"
+            href="#hero"
             class="w-full text-center py-6 mr-5 hover:underline hover:text-linkHover"
           >
             Home</a
@@ -55,7 +55,7 @@
         <form class="relative">
           <input
             type="text"
-            class="bg-searchCol md:w-36 placeholder:font-myFont3 w-20 h-8 px-2 rounded-md"
+            class="search md:w-36 placeholder:font-myFont3 w-20 h-8 px-2 rounded-md"
             placeholder="Search"
           />
           <i
@@ -64,9 +64,10 @@
           ></i>
         </form>
         <div
-          class="w-14 md:mr-7 px-2 py-2 bg-searchCol flex items-center rounded-full"
+          id="dark-btn"
+          class="w-14 md:mr-7 px-2 py-2 bg-searchCol flex items-center rounded-full cursor-pointer"
         >
-          <span class="bg-bgCol p-1 rounded-full">
+          <span id="sunny" class="bg-bgCol p-1 rounded-full">
             <img src="./project images/sunny.png" alt="" class="w-2 h-2" />
           </span>
         </div>
@@ -74,19 +75,22 @@
           id="mobile-menu"
           class="absolute top-0 bg-black w-full text-5xl flex-col justify-content-center z-50 origin-top animate-open-menu hidden"
         >
-          <button class="text-8xl self-end px-6 text-bgCol">&times;</button>
+          <button class="x-icon text-8xl self-end px-6 text-bgCol">
+            &times;
+          </button>
           <div
-            class="flex flex-col min-h-screen items-center py-2 text-bgCol text-xl"
+            class="mobile-menu-icons flex flex-col min-h-screen items-center py-2 text-bgCol text-xl"
             aria-label="mobile"
           >
             <a
-              href="index.html"
+              href="#hero"
               class="w-full text-center py-6 hover:underline hover:text-linkHover"
             >
               Home</a
             >
             <a
               href="blog.html"
+              target="_blank"
               class="w-full text-center py-6 hhover:underline hover:text-linkHover"
             >
               Blog</a
@@ -116,7 +120,7 @@
           class="text-3xl md:hidden cursor-pointer relative w-8 h-8"
         >
           <div
-            class="bg-black w-8 h-1 rounded absolute right-2 top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-black before:w-8 before:h-1 before:rounded before:absolute before:transition-all before:duration-500 before:-translate-x-4 before:-translate-y-3 after:content-[''] after:bg-black after:w-8 after:h-1 after:rounded after:absolute after:transition-all after:duration-500 after:-translate-x-4 after:translate-y-3 md:hidden cursor-pointer"
+            class="harm-icon bg-bgCol w-8 h-1 rounded absolute right-2 top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-bgCol before:w-8 before:h-1 before:rounded before:absolute before:transition-all before:duration-500 before:-translate-x-4 before:-translate-y-3 after:content-[''] after:bg-bgCol after:w-8 after:h-1 after:rounded after:absolute after:transition-all after:duration-500 after:-translate-x-4 after:translate-y-3 md:hidden cursor-pointer"
           ></div>
         </button>
         <!-- <i
@@ -128,14 +132,17 @@
       </nav>
     </header>
     <main class="flex flex-col justify-center items-center px-5 relative z-20">
-      <h1 class="mt-20 text-4xl font-bold text-paragraphCol">Page Title</h1>
-      <div class="flex gap-5 mt-2 text-paragraphCol">
+      <h1 class="page-title mt-28 text-4xl font-bold text-paragraphCol">
+        Page Title
+      </h1>
+      <div class="home flex gap-5 mt-2 text-paragraphCol">
         <p class="font-semibold">Home</p>
         <p>Link One</p>
       </div>
+
       <img
         src="./project images/girl with laptop.png"
-        class=""
+        class="mt-10"
         alt="girl with laptop"
       />
       <div
@@ -171,20 +178,20 @@
       </div>
 
       <!-- <div
-        class="bg-advetBxCol py-4 px-14 text-paragraphCol text-center mt-16 rounded-md sm:px-28 md:px-44 lg:px-60 xl:px-80"
+        class="advert-box bg-advetBxCol py-4 px-14 text-paragraphCol text-center mt-16 rounded-md sm:px-28 md:px-44 lg:px-60 xl:px-80"
       >
         <p class="text-xs font-medium">Advertisement</p>
         <h4 class="text-lg font-bold">You can place ads</h4>
         <p class="text-sm font-semibold text-center">750x100</p>
       </div> -->
     </main>
-    <section class="flex flex-col items-center justify-center mt-10">
-      <!-- <h3 class="font-bold ml-8 self-start">Latest Post</h3> -->
+    <section class="section1 flex flex-col items-center justify-center mt-10">
+      <h3 class="font-bold ml-8 self-start">Latest Post</h3>
 
       <div class="flex flex-col gap-5 items-center px-8 sm-flex-wrap mt-5">
         <div class="flex flex-col gap-5 sm:flex-row">
           <div
-            class="flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
+            class="cards flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
           >
             <img
               src="./project images/beach.png"
@@ -222,7 +229,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
+            class="cards flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
           >
             <img
               src="./project images/huge building day.png"
@@ -261,7 +268,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
+            class="cards flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
           >
             <img
               src="./project images/girl beside car.png"
@@ -302,7 +309,7 @@
         </div>
         <div class="flex flex-col gap-5 sm:flex-row">
           <div
-            class="flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
+            class="cards flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
           >
             <img
               src="./project images/house in woods.png"
@@ -341,7 +348,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
+            class="cards flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
           >
             <img
               src="./project images/rock pile.png"
@@ -380,7 +387,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
+            class="cards flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
           >
             <img
               src="./project images/blue car.png"
@@ -421,7 +428,7 @@
         </div>
         <div class="flex flex-col gap-5 sm:flex-row">
           <div
-            class="flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
+            class="cards flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
           >
             <img
               src="./project images/phone.png"
@@ -460,7 +467,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
+            class="cards flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
           >
             <img
               src="./project images/boat on sea4.png"
@@ -480,7 +487,7 @@
               The Impact of Technology on the Workplace: How Technology is
               Changing
             </h3>
-            <div class="flex mt-3 self-start items-center">
+            <div class="profile flex mt-3 self-start items-center">
               <img
                 src="./project images/elizabeth slavin.png "
                 class="w-6 h-6 md:w-10 md:h-10"
@@ -499,7 +506,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
+            class="cards flex flex-col bg-bgCol drop-shadow-3xl items-center rounded-lg px-3 py-3"
           >
             <img
               src="./project images/game pad.png"
@@ -545,7 +552,7 @@
         View All Post
       </button>
       <div
-        class="bg-advetBxCol py-4 px-14 text-paragraphCol text-center mt-12 rounded-md sm:px-28 md:px-44 lg:px-60 xl:px-80"
+        class="advert-box py-4 px-14 text-paragraphCol text-center mt-12 rounded-md sm:px-28 md:px-44 lg:px-60 xl:px-80"
       >
         <p class="text-xs font-medium">Advertisement</p>
         <h4 class="text-lg font-bold text-nowrap">You can place ads</h4>
@@ -553,9 +560,9 @@
       </div>
     </section>
 
-    <footer class="flex flex-col bg-headFootercol p-5 gap-16 mt-16">
+    <footer class="flex flex-col p-5 gap-16 mt-16">
       <div
-        class="w-full flex flex-col gap-8 md:flex-row md:py-10 md:px-8 md:justify-between md:items-center"
+        class="first-footer-cont w-full flex flex-col gap-8 md:flex-row md:py-10 md:px-8 md:justify-between md:items-center"
       >
         <div class="md:w-72">
           <h4 class="font-bold text-paragraphCol md:text-lg">About</h4>
@@ -651,7 +658,7 @@
         </div>
 
         <form
-          class="bg-bgCol flex flex-col items-center p-5 rounded-md sm:w-80 self-center md:w-96 md:self-start"
+          class="footer-form flex flex-col items-center p-5 rounded-md sm:w-80 self-center md:w-96 md:self-start"
         >
           <h3 class="font-bold text-paragraphCol md:text-xl">
             Weekly Newsletter
@@ -671,7 +678,7 @@
             <img
               src="./project images/icon-email.svg"
               alt="email"
-              class="top-7 right-2 absolute bg-advetBxCol border-advetBxCol border-2 border-solid"
+              class="top-7 right-2 absolute"
             />
           </div>
           <button
@@ -686,7 +693,7 @@
       <div class="flex flex-col gap-2 sm:flex-row md:px-8">
         <div class="flex gap-2">
           <img
-            src="./project images/purple logo.png"
+            src="./project images/black logo.png"
             alt="blackLogo"
             class="w-10 h-10"
           />
