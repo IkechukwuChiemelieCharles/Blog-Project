@@ -15,6 +15,7 @@ module.exports = {
         darkMdBg: "#181A2A",
         darkFooterBg: "#242535 ",
         linkHover: "#4B6BFB ",
+        // bgd: "var(--bgdark)",
       },
       dropShadow: {
         "3xl": "0 0 3px rgba(0, 0, 0, 0.25)",

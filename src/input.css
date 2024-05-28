@@ -3,6 +3,93 @@
 @tailwind utilities;
 
 @layer utilities {
+  /* btnCol: "#4B6BFB;",
+        paragraphCol: "#3B3C4A",
+        headerCol: "#181A2A",
+        advetBxCol: "#E8E8EA",
+        iconCol: " #696A75",
+        searchCol: "#F4F4F5",
+        headFootercol: "#F6F6F7",
+        bgCol: "#FFFFFF",
+        darkMdBg: "#181A2A",
+        darkFooterBg: "#242535 ",
+        linkHover: "#4B6BFB ", */
+  :root {
+    --darkMode: #ffffff;
+    --paragraphCol: #3b3c4a;
+    --headFootercol: #f6f6f7;
+    --paragraphCol: #3b3c4a;
+  }
+
+  .darkenmode {
+    --darkMode: #181a2a;
+    --paragraphCol: #3b3c4a;
+    --headFootercol: #242535;
+    --paragraphCol: #f6f6f7;
+  }
+
+  body {
+    background-color: var(--darkMode);
+  }
+  .search {
+    background-color: var(--headFootercol);
+  }
+  .overlapping-box {
+    background-color: var(--darkMode);
+    color: var(--paragraphCol);
+  }
+
+  /* .section1 > div {
+    background-color: var(--darkMode);
+    color: var(--paragraphCol);
+  } */
+  .advert-box {
+    background-color: var(--headFootercol);
+    color: var(--paragraphCol);
+  }
+  .cards {
+    background-color: var(--darkMode);
+  }
+  footer {
+    background-color: var(--headFootercol);
+    color: var(--paragraphCol);
+  }
+  .first-footer-cont a {
+    color: var(--paragraphCol);
+  }
+  .first-footer-cont h4 {
+    color: var(--paragraphCol);
+  }
+  .first-footer-cont p {
+    color: var(--paragraphCol);
+  }
+  .first-footer-cont span {
+    color: var(--paragraphCol);
+  }
+  #mobile-menu {
+    background-color: var(--darkMode);
+    color: var(--paragraphCol);
+  }
+  .mobile-menu-icons {
+    color: var(--paragraphCol);
+  }
+  .x-icon {
+    color: var(--paragraphCol);
+  }
+  .harm-icon {
+    background-color: var(--darkMode);
+  }
+
+  .harm-icon::before {
+    content: "";
+    background-color: var(--darkMode);
+    color: var(--paragraphCol);
+  }
+  .harm-icon::after {
+    content: "";
+    background-color: var(--darkMode);
+    color: var(--paragraphCol);
+  }
   .toggle-btn {
     @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45
         [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg];
@@ -36,5 +123,11 @@
   }
   .successBtn {
     color: green;
+  }
+
+  #dark-btn.dark-btn-on {
+    padding-left: 30px;
+    background-color: blueviolet;
+    /* transition: transform 0.3s ease; */
   }
 }

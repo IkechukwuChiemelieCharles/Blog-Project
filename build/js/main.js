@@ -51,3 +51,8 @@ subscBtn.addEventListener("click", function () {
     errorBtn.classList.remove("successBtn");
   }
 });
+const darkBtn = document.getElementById("dark-btn");
+darkBtn.onclick = function () {
+  darkBtn.classList.toggle("dark-btn-on");
+  document.body.classList.toggle("darkenmode");
+};
