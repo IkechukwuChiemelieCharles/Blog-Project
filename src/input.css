@@ -95,6 +95,9 @@ link col  dark: #BABABF			#3B3C4A */
     background-color: var(--emailBox);
     border: 2px solid var(--cardBg);
   }
+  .footer-form h3 {
+    color: var(--paragraphCol);
+  }
   #emailInput {
     background-color: var(--emailInput);
     color: var(--ProfileText);
