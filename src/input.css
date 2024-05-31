@@ -54,7 +54,22 @@ link col  dark: #BABABF			#3B3C4A */
   .overlapping-box p {
     color: var(--ProfileText);
   }
+  .profile-text p {
+    color: var(--paragraphCol);
+  }
+  .collaborator {
+    background-color: var(--headFootercol);
 
+    color: var(--paragraphCol);
+  }
+  .collaborator span {
+    background-color: var(--paragraphCol);
+    cursor: pointer;
+  }
+  .collaborator i {
+    color: var(--searchBox);
+    cursor: pointer;
+  }
   .advert-box {
     background-color: var(--headFootercol);
     color: var(--paragraphCol);
