@@ -128,6 +128,16 @@ link col  dark: #BABABF			#3B3C4A */
   .x-icon {
     color: var(--paragraphCol);
   }
+  .section3 {
+    color: var(--paragraphCol);
+  }
+  article {
+    background-color: var(--searchBox);
+    color: var(--paragraphCol);
+  }
+  .section4 {
+    color: var(--paragraphCol);
+  }
   /* .harm-icon {
     background-color: var(--darkMode);
   }

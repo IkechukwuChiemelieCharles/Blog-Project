@@ -1,0 +1,514 @@
+<!-- gdodod -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <title>Blog Website</title>
+  </head>
+  <body>
+    <header class="fixed z-50 w-full">
+      <nav
+        class="flex items-center justify-between py-3 relative sm:px-5 md:px-5 lg:px-10 xl:px-32 2xl:px-40"
+      >
+        <a href="#"
+          ><img
+            src="./project images/black logo with text.png"
+            class="w-14 h-5 sm:w-16 sm:h-6 lg:w-20 lg:h-10 mr-10 ml-5"
+            alt="logo"
+        /></a>
+        <div class="hidden md:block lg:text-xl lg:ml-20 font-bold">
+          <a
+            href="./index.html"
+            class="w-full text-center py-6 mr-5 xl:mr-4 hover:underline hover:text-linkHover"
+          >
+            Home</a
+          >
+          <a
+            href="blog.html"
+            target="_blank"
+            class="w-full text-center py-6 mr-5 xl:mr-4 hover:underline hover:text-linkHover"
+          >
+            Blog</a
+          >
+          <a
+            href="post.html"
+            class="w-full text-center py-6 mr-5 xl:mr-4 hover:underline hover:text-linkHover"
+          >
+            Single Post</a
+          >
+          <a
+            href="#"
+            class="w-full text-center py-6 mr-5 xl:mr-4 hover:underline hover:text-linkHover"
+          >
+            Pages</a
+          >
+          <a
+            href="#"
+            class="w-full text-center py-6 mr-5 xl:mr-4 hover:underline hover:text-linkHover"
+          >
+            Contact</a
+          >
+        </div>
+        <form class="relative">
+          <input
+            type="text"
+            class="search sm:w-52 md:w-36 lg:w-40 placeholder:font-myFont3 w-20 h-8 px-2 rounded-md"
+            placeholder="Search"
+          />
+          <i
+            class="fa fa-search absolute top-2 right-1 text-paragraphCol"
+            aria-hidden="true"
+          ></i>
+        </form>
+        <div
+          id="dark-btn"
+          class="w-14 md:mr-7 px-2 py-2 bg-searchCol flex items-center rounded-full cursor-pointer"
+        >
+          <span id="sunny" class="bg-bgCol p-1 rounded-full">
+            <img src="./project images/sunny.png" alt="" class="w-2 h-2" />
+          </span>
+        </div>
+        <section
+          id="mobile-menu"
+          class="absolute top-0 bg-black w-full text-5xl flex-col justify-content-center z-50 origin-top animate-open-menu hidden"
+        >
+          <button class="x-icon text-8xl self-end px-6 text-bgCol">
+            &times;
+          </button>
+          <div
+            class="mobile-menu-icons flex flex-col min-h-screen items-center py-2 text-bgCol text-xl"
+            aria-label="mobile"
+          >
+            <a
+              href="./index.html"
+              class="w-full text-center py-6 hover:underline hover:text-linkHover"
+            >
+              Home</a
+            >
+            <a
+              href="blog.html"
+              target="_blank"
+              class="w-full text-center py-6 hhover:underline hover:text-linkHover"
+            >
+              Blog</a
+            >
+            <a
+              href="./post.html"
+              class="w-full text-center py-6 hover:underline hover:text-linkHover"
+            >
+              Single Post</a
+            >
+            <a
+              href="#"
+              class="w-full text-center py-6 hover:underline hover:text-linkHover"
+            >
+              Pages</a
+            >
+            <a
+              href="#"
+              class="w-full text-center py-6 hover:underline hover:text-linkHover"
+            >
+              Contact</a
+            >
+          </div>
+        </section>
+        <button
+          id="harmburger"
+          class="text-3xl md:hidden cursor-pointer relative w-8 h-8"
+        >
+          <div
+            class="harm-icon bg-bgCol w-8 h-1 rounded absolute right-2 top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-bgCol before:w-8 before:h-1 before:rounded before:absolute before:transition-all before:duration-500 before:-translate-x-4 before:-translate-y-3 after:content-[''] after:bg-bgCol after:w-8 after:h-1 after:rounded after:absolute after:transition-all after:duration-500 after:-translate-x-4 after:translate-y-3 md:hidden cursor-pointer"
+          ></div>
+        </button>
+        <!-- <i
+          class="fa fa-bars cursor-pointer font-extrabold mr-4"
+          aria-hidden="true"
+          id="harmburger"
+        >
+        </i> -->
+      </nav>
+    </header>
+    <main
+      class="flex flex-col justify-center items-center px-5 sm:px-5 relative z-20 md:px-5 lg:px-10 xl:px-32 2xl:px-40 gap-5"
+    >
+      <section
+        class="section3 flex flex-col gap-5 md:gap-10 text-sm md:text-xl xl:text-3xl 2xl:text-4xl px-5 sm:px-5 relative z-20 md:px-5 lg:px-10 xl:px-32 2xl:px-40"
+      >
+        <div class="overlapping-box mt-28">
+          <button
+            id="btn"
+            class="bg-btnCol w-20 h-5 text-xs text-center rounded-sm text-bgCol md:text-lg md:w-28 md:h-8"
+          >
+            Technology
+          </button>
+          <h3
+            class="font-bold text-sm font-myFont3 mt-1 leading-4 sm:mt-3 md:text-2xl md:leading-6 lg:text-4xl"
+          >
+            The Impact of Technology on the Workplace: How Technology is
+            Changing
+          </h3>
+          <div class="flex mt-2">
+            <img
+              src="./project images/jason fransisco.png"
+              class="w-4 h-4 mr-1 md:w-10 md:h-10"
+              alt="profile-img"
+            />
+            <p
+              class="text-xs font-light sm:font-semibold text-nowrap ml-1 text-paragraphCol md:text-lg xl:text-2xl"
+            >
+              Jason Fransisco
+            </p>
+            <p
+              class="text-xs font-light sm:font-semibold ml-2 text-paragraphCol md:text-xl xl:text-2xl"
+            >
+              August 20, 2022
+            </p>
+          </div>
+        </div>
+        <img
+          src="./project images/huge building night.png"
+          alt="huge building night"
+        />
+        <p>
+          Traveling is an enriching experience that opens up new horizons,
+          exposes us to different cultures, and creates memories that last a
+          lifetime. However, traveling can also be stressful and overwhelming,
+          especially if you don't plan and prepare adequately. In this blog
+          article, we'll explore tips and tricks for a memorable journey and how
+          to make the most of your travels.
+        </p>
+        <p>
+          One of the most rewarding aspects of traveling is immersing yourself
+          in the local culture and customs. This includes trying local cuisine,
+          attending cultural events and festivals, and interacting with locals.
+          Learning a few phrases in the local language can also go a long way in
+          making connections and showing respect.
+        </p>
+        <div class="flex flex-col gap-2">
+          <h3 class="font-bold text-lg md:text-2xl xl:text-4xl 2xl:text-5xl">
+            Research Your Destination
+          </h3>
+          <p>
+            Before embarking on your journey, take the time to research your
+            destination. This includes understanding the local culture, customs,
+            and laws, as well as identifying top attractions, restaurants, and
+            accommodations. Doing so will help you navigate your destination
+            with confidence and avoid any cultural faux pas.
+          </p>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. In
+          hendrerit gravida rutrum quisque non tellus orci ac auctor. Mi ipsum
+          faucibus vitae aliquet nec ullamcorper sit amet. Aenean euismod
+          elementum nisi quis eleifend quam adipiscing vitae. Viverra adipiscing
+          at in tellus.
+        </p>
+        <div class="flex flex-col gap-2">
+          <h3 class="font-bold text-lg md:text-2xl xl:text-4xl 2xl:text-5xl">
+            Plan Your Itinerary
+          </h3>
+          <p>
+            While it's essential to leave room for spontaneity and unexpected
+            adventures, having a rough itinerary can help you make the most of
+            your time and budget. Identify the must-see sights and experiences
+            and prioritize them according to your interests and preferences.
+            This will help you avoid overscheduling and ensure that you have
+            time to relax and enjoy your journey.
+          </p>
+        </div>
+        <p>
+          Vitae sapien pellentesque habitant morbi tristique. Luctus venenatis
+          lectus magna fringilla. Nec ullamcorper sit amet risus nullam eget
+          felis. Tincidunt arcu non sodales neque sodales ut etiam sit amet.
+        </p>
+      </section>
+
+      <section
+        class="section4 flex flex-col gap-5 md:gap-10 text-sm md:text-xl xl:text-3xl 2xl:text-4xl px-5 sm:px-5 relative z-20 md:px-5 lg:px-10 xl:px-32 2xl:px-40"
+      >
+        <article class="text-center italic p-5 rounded-md">
+          “ Traveling can expose you to new environments and potential health
+          risks, so it's crucial to take precautions to stay safe and healthy. ”
+        </article>
+        <img
+          src="./project images/Man with luggage.png"
+          alt="Man with luggage"
+        />
+        <div
+          class="advert-box bg-advetBxCol py-4 px-14 text-paragraphCol text-center mt-16 rounded-md sm:px-28 md:px-44 lg:px-60 xl:px-80"
+        >
+          <p class="text-xs lg:text-xl font-medium">Advertisement</p>
+          <h4 class="text-lg lg:text-2xl font-bold">You can place ads</h4>
+          <p class="text-sm lg:text-xl font-semibold text-center">750x100</p>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h3 class="font-bold text-lg md:text-2xl xl:text-4xl 2xl:text-5xl">
+            Pack Lightly and Smartly
+          </h3>
+          <p>
+            Packing can be a daunting task, but with some careful planning and
+            smart choices, you can pack light and efficiently. Start by making a
+            packing list and sticking to it, focusing on versatile and
+            comfortable clothing that can be mixed and matched. Invest in
+            quality luggage and packing organizers to maximize space and
+            minimize wrinkles.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h3 class="font-bold text-lg md:text-2xl xl:text-4xl 2xl:text-5xl">
+            Stay Safe and Healthy
+          </h3>
+          <p>
+            Traveling can expose you to new environments and potential health
+            risks, so it's crucial to take precautions to stay safe and healthy.
+            This includes researching any required vaccinations or medications,
+            staying hydrated, washing your hands frequently, and using sunscreen
+            and insect repellent. It's also essential to keep your valuables
+            safe and secure and to be aware of your surroundings at all times.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h3 class="font-bold text-lg md:text-2xl xl:text-4xl 2xl:text-5xl">
+            Immerse Yourself in the Local Culture
+          </h3>
+          <p>
+            One of the most rewarding aspects of traveling is immersing yourself
+            in the local culture and customs. This includes trying local
+            cuisine, attending cultural events and festivals, and interacting
+            with locals. Learning a few phrases in the local language can also
+            go a long way in making connections and showing respect.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h3 class="font-bold text-lg md:text-2xl xl:text-4xl 2xl:text-5xl">
+            Capture Memories
+          </h3>
+          <p>
+            Finally, don't forget to capture memories of your journey. Whether
+            it's through photographs, journaling, or souvenirs, preserving the
+            moments and experiences of your travels can bring joy and nostalgia
+            for years to come. However, it's also essential to be present in the
+            moment and not let technology distract you from the beauty of your
+            surroundings.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3">
+          <h3 class="font-bold text-lg md:text-2xl xl:text-4xl 2xl:text-5xl">
+            Conclusion:
+          </h3>
+          <p>
+            Traveling is an art form that requires a blend of planning,
+            preparation, and spontaneity. By following these tips and tricks,
+            you can make the most of your journey and create memories that last
+            a lifetime. So pack your bags, embrace the adventure, and enjoy the
+            ride.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="flex flex-col p-5 gap-16 mt-16 lg:px-10 xl:px-32 2xl:px-40">
+      <div
+        class="first-footer-cont w-full flex flex-col gap-8 md:flex-row md:py-10 md:px-8 md:justify-between md:items-start"
+      >
+        <div class="md:w-72">
+          <h4
+            class="font-bold text-paragraphCol md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl"
+          >
+            About
+          </h4>
+          <p
+            class="text-paragraphCol text-sm mt-2 md:text-lg lg:text-lg xl:text-2xl"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam
+          </p>
+          <p class="text-paragraphCol text-sm mt-4 lg:text-xl xl:text-2xl">
+            <span
+              class="font-bold text-paragraphCol text-sm md:text-lg lg:text-xl xl:text-2xl"
+            >
+              Email:
+            </span>
+            <a
+              href="#"
+              class="hover:underline hover:text-linkHover md:text-lg lg:text-lg xl:text-2xl"
+              >info@jstemplate.net</a
+            >
+          </p>
+          <p class="text-paragraphCol text-sm mt-2">
+            <span
+              class="font-bold text-paragraphCol text-sm md:text-lg lg:text-xl xl:text-2xl"
+            >
+              Phone:
+            </span>
+            <a
+              href="#"
+              class="hover:underline hover:text-linkHover lg:text-lg md:text-lg xl:text-2xl"
+            >
+              880 123 456 789</a
+            >
+          </p>
+        </div>
+        <div class="flex flex-col gap-2 text-paragraphCol">
+          <h4
+            class="font-bold text-paragraphCol md:text-lg md:text-nowrap lg:text-xl xl:text-2xl 2xl:text-3xl"
+          >
+            Quick Link
+          </h4>
+          <a
+            href="#"
+            class="text-sm font-medium hover:underline hover:text-linkHover md:text-lg lg:text-lg xl:text-2xl"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-sm font-medium hover:underline hover:text-linkHover md:text-lg lg:text-lg xl:text-2xl"
+            >About</a
+          >
+          <a
+            href="#"
+            class="text-sm font-medium hover:underline hover:text-linkHover md:text-lg lg:text-lg xl:text-2xl"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="text-sm font-medium hover:underline hover:text-linkHover md:text-lg lg:text-lg xl:text-2xl"
+            >Archived</a
+          >
+          <a
+            href="#"
+            class="text-sm font-medium hover:underline hover:text-linkHover md:text-lg lg:text-lg xl:text-2xl"
+            >Author</a
+          >
+          <a
+            href="#"
+            class="text-sm font-medium hover:underline hover:text-linkHover md:text-lg lg:text-lg xl:text-2xl"
+            >Contact</a
+          >
+        </div>
+        <div class="flex flex-col gap-2 text-paragraphCol">
+          <h4
+            class="font-bold text-paragraphCol md:text-lg lg:text-xl xl:text-3xl 2xl:text-3xl"
+          >
+            Category
+          </h4>
+          <a
+            href="#"
+            class="text-sm font-medium hover:underline hover:text-linkHover md:text-lg lg:text-lg xl:text-2xl"
+            >Lifestyle</a
+          >
+          <a
+            href="#"
+            class="text-sm font-medium hover:underline hover:text-linkHover md:text-lg lg:text-lg xl:text-2xl"
+            >Technology</a
+          >
+          <a
+            href="#"
+            class="text-sm font-medium hover:underline hover:text-linkHover md:text-lg lg:text-lg xl:text-2xl"
+            >Travel</a
+          >
+          <a
+            href="#"
+            class="text-sm font-medium hover:underline hover:text-linkHover md:text-lg lg:text-lg xl:text-2xl"
+            >Business</a
+          >
+          <a
+            href="#"
+            class="text-sm font-medium hover:underline hover:text-linkHover md:text-lg lg:text-lg xl:text-2xl"
+            >Economy</a
+          >
+          <a
+            href="#"
+            class="text-sm font-medium hover:underline hover:text-linkHover md:text-lg lg:text-lg xl:text-2xl"
+            >Sports</a
+          >
+        </div>
+
+        <form
+          class="footer-form flex flex-col items-center p-5 rounded-md sm:w-80 self-center md:w-96 md:self-start"
+        >
+          <h3
+            class="font-bold text-paragraphCol md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl"
+          >
+            Weekly Newsletter
+          </h3>
+          <p
+            class="text-sm font-medium text-nowrap md:text-md lg:text-lg xl:text-xl"
+          >
+            Get blog articles and offers via email
+          </p>
+          <div class="relative">
+            <input
+              id="emailInput"
+              type="email"
+              placeholder="Your Email "
+              class="border-headFootercol border-2 border-solid rounded-md px-3 py-1 xl:px-16 xl:py-3 placeholder:text-xs placeholder:md:text-lg placeholder:xl:text-2xl mt-5"
+            />
+            <div id="error-msg" class="error-msg"></div>
+
+            <img
+              src="./project images/icon-email.svg"
+              alt="email"
+              class="xl:w-6 top-9 right-2 absolute"
+            />
+          </div>
+          <button
+            id="subBtn"
+            class="bg-btnCol px-16 py-2 mt-2 text-xs text-bgCol rounded-sm xl:mt-5 md:text-lg lg:text-xl xl:text-2xl"
+          >
+            Subscribe
+          </button>
+          <div id="btn-error" class="errorBtn"></div>
+        </form>
+      </div>
+      <div
+        class="flex flex-col md:justify-between items-center gap-2 sm:flex-row md:px-8"
+      >
+        <div class="flex gap-2">
+          <img
+            src="./project images/black logo.png"
+            alt="blackLogo"
+            class="w-10 h-10"
+          />
+          <div>
+            <p class="text-sm md:text-lg xl:text-2xl">
+              Meta<span class="font-bold md:text-lg">Blog</span>
+            </p>
+            <p class="text-xs md:text-lg xl:text-2xl">
+              © JS Template 2023. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex gap-3 md:gap-5 md:flex-row md:justify-between md:ml-5 md:text-nowrap"
+        >
+          <a
+            href="#"
+            class="text-sm font-medium hover:underline hover:text-linkHover md:text-lg xl:text-2xl"
+            >Terms of Use</a
+          >
+          <a
+            href="#"
+            class="text-sm font-medium hover:underline hover:text-linkHover md:text-lg xl:text-2xl"
+            >Privacy Policy</a
+          >
+          <a
+            href="#"
+            class="text-sm font-medium hover:underline hover:text-linkHover md:text-lg xl:text-2xl"
+            >Cookie Policy</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
